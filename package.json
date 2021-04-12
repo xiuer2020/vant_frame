@@ -15,6 +15,6 @@
     "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
-    "vant": "^2.12.12"
+    "vant": "^2.12.13"
   }
 }
