@@ -19,9 +19,9 @@
         <!--      ::before-->
         default slot
       </div>
-      <!--    df + aic + h100p-->
+      <!--    dib + df + aic + h100p-->
     </div>
-    <!--  普通状态 h44 + p + tac-->
+    <!--  普通状态 dib + h44 + lh1.2 + w60 + p(0 15px) -->
 
   </div>
 </template>

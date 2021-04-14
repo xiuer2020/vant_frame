@@ -11,7 +11,7 @@
 <!--      tar + fx1 -->
       right-icon slot extra slot
     </div>
-<!--    df + lh24px + pd-->
+<!--    df + lh24px + pd(10px 16px)-->
   </div>
 </template>
 <script>

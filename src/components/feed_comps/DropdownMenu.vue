@@ -8,14 +8,14 @@
             <span class="van-ellipsis">
               title slot
             </span>
-<!--            ovh + whsn + toe-->
+<!--            dib-->
 <!--            ::after-->
         </span>
 <!--          行内块-->
         </div>
 <!--        df-->
       </div>
-<!--      h48-->
+<!--      h48 + posr + zi11-->
     </div>
     <div>
       <div class="van-dropdow-item van-dropdow-item--down">

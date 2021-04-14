@@ -1,63 +1,51 @@
 <template>
   <div id="app">
-    <van-uploader v-model="fileList" :after-read="afterRead">
-      <template #default>default slot</template>
-      <template #preview-cover="{ file }">
-       
-        <div class="preview-cover van-ellipsis" v-if="file">{{ file.name }}url</div>
-         <div class="preview-cover van-ellipsis" v-else>{{ file }}</div>
-      </template>
-    </van-uploader>
+    <van-tabs v-model="active">
+      <template #nav-left>nav-left slot</template>
+      <template #nav-right>nav-right slot</template>
+
+      <van-tab title="标签 1">
+        <template #default>default slot</template>
+        <template #title>title slot</template>
+      </van-tab>
+      <van-tab title="标签 2">内容 2</van-tab>
+      <van-tab title="标签 3">内容 3</van-tab>
+      <van-tab title="标签 4">内容 4</van-tab>
+    </van-tabs>
   </div>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      fileList: [
-        { url: 'https://img01.yzcdn.cn/vant/leaf.jpg' },
-        {
-          url: 'https://img01.yzcdn.cn/vant/sand.jpg',
-          deletable: true,
-          beforeDelete: () => {
-            Toast('自定义单个预览图片的事件和样式');
-          },
-        },
-        {
-          url: 'https://img01.yzcdn.cn/vant/tree.jpg',
-          deletable: true,
-          imageFit: 'contain',
-          previewSize: 120,
-        }
-      ]
-    };
-  },
-  methods: {
-    afterRead:function(a, b, c){
-      console.log(a, b, c);
-    }
-  },
-};
+  import {Toast} from 'vant';
+
+  export default {
+    data() {
+      return {
+        active: 0
+      };
+    },
+  };
 </script>
 <style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  padding-top: 50px;
-  background-color: #ddd;
-}
-.preview-cover {
-  position: absolute;
-  bottom: 0;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 4px;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.3);
-}
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    padding-top: 50px;
+    background-color: #ddd;
+    min-height: 1000vh;
+  }
+
+  .preview-cover {
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 4px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+  }
 </style>
