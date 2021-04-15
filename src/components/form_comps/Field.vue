@@ -16,7 +16,7 @@
     </div>
     extra slot
   </div>
-<!--  df + p + lh14px-->
+<!--  df + p(10px 16px) + lh14px-->
 </template>
 
 <script>

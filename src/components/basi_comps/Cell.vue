@@ -8,10 +8,10 @@
       </div>
 <!--      fx1-->
       <div class="van-cell__value">default slot</div>
-<!--      tar + fx1 -->
+<!--      fx1 -->
       right-icon slot extra slot
     </div>
-<!--    df + lh24px + pd(10px 16px)-->
+<!--    df + lh24px + pd(10px 16px) | pd(12px 16px)-->
   </div>
 </template>
 <script>
