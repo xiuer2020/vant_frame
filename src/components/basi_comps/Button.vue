@@ -9,7 +9,7 @@
       </div>
       <!--    df + aic + h100p-->
     </div>
-    <!--  loading状态 h44 + p + tac-->
+    <!--  loading状态 h44 + p(0 15px) + tac-->
 
     <div
       class="van-button van-button--default van-button-normal van-button--loading"
@@ -21,7 +21,7 @@
       </div>
       <!--    dib + df + aic + h100p-->
     </div>
-    <!--  普通状态 dib + h44 + lh1.2 + w60 + p(0 15px) -->
+    <!--  普通状态 dib + h44 + lh1.2 + w60 + p(0 15px) + posr -->
 
   </div>
 </template>

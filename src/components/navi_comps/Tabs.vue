@@ -17,8 +17,10 @@
       </div>
 <!--      h100p + pb15 + df + posr-->
     </div>
+<!--    h44-->
     <div class="van-tabs__content">
       <div role="tabpanel" class="van-tab__pane" style="">default slot</div>
+
       <div role="tabpanel" class="van-tab__pane" style="display: none;"><!----></div>
       <div role="tabpanel" class="van-tab__pane" style="display: none;"><!----></div>
       <div role="tabpanel" class="van-tab__pane" style="display: none;"><!----></div>
